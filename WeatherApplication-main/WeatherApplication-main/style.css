@@ -1,0 +1,100 @@
+body {
+    background: #F5F5F5; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2, label, p {
+    color: #333; /* Dark gray text color */
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    margin-top: 20px;
+}
+
+button {
+    background: #4CAF50; /* Green button background */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px; 
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: #333; /* Dark gray text color */
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    background-color: #8ce8fa; /* White background for the icon */
+    padding: 5px; /* Add padding to the icon for better visibility */
+    border-radius: 50%; /* Make the icon circular */
+}
+.hourly-item.scattered-clouds img {
+    /* Specify styles for the scattered clouds icon */
+    filter: hue-rotate(180deg); /* Rotate the hue to change the color */
+}
+#hourly-heading {
+    color: #333; /* Dark gray text color */
+    margin-top: 10px;
+}
